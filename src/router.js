@@ -12,13 +12,14 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
+      path: '/index.html',
       name: 'index',
       components: { default: Index, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: 'black' }
-      }
+      },
+      alias: '/'
     },
   ],
   scrollBehavior: to => {
