@@ -47,6 +47,8 @@ function resizeThrottler(actualResizeHandler) {
   }
 }
 
+import EventBus from '@/EventBus'
+
 export default {
   name: 'navbar',
   props: {
@@ -148,7 +150,7 @@ export default {
       let isOpen = htmlClasses.contains('nav-open');
       let eventToTrigger = isOpen ? 'open' : 'close';
       this.showMenu = isOpen;
-      this.$emit(eventToTrigger);
+      this.$emit(eventToTrigger);      
     },
     toggle() {
       this.setNav(!this.showMenu);
@@ -179,6 +181,8 @@ export default {
   },
   mounted() {
     document.addEventListener('scroll', this.scrollListener);
+
+    EventBus.$on('close-navbar', () => this.close())
   },
   beforeDestroy() {
     document.removeEventListener('scroll', this.scrollListener);

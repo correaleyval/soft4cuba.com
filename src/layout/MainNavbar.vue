@@ -13,22 +13,16 @@
     </template>
     
     <template slot="navbar-menu">
-      <li class="nav-item">
+      <li class="nav-item" @click="navlinkClick">
         <a class="nav-link" href="#home">
           <i class="now-ui-icons media-1_button-play"></i>
           <p>Inicio</p>
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" @click="navlinkClick">
         <a class="nav-link" href="#about">
           <i class="now-ui-icons design_bullet-list-67"></i>
           <p>Acerca de</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">
-          <i class="now-ui-icons users_circle-08"></i>
-          <p>Contáctenos</p>
         </a>
       </li>
     </template>
@@ -36,10 +30,12 @@
 </template>
 
 <script>
-/* eslint-disable */
 
-import { DropDown, NavbarToggleButton, Navbar, NavLink } from "@/components";
+import { Navbar } from "@/components";
 import { Popover } from "element-ui";
+
+import EventBus from '@/EventBus'
+
 export default {
   name: "main-navbar",
   props: {
@@ -47,11 +43,13 @@ export default {
     colorOnScroll: Number
   },
   components: {
-    DropDown,
-    Navbar,
-    NavbarToggleButton,
-    NavLink,
+    Navbar,    
     [Popover.name]: Popover
+  },
+  methods: {
+    navlinkClick() {
+      EventBus.$emit('close-navbar')
+    }
   }
 };
 </script>
