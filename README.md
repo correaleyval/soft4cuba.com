@@ -1,4 +1,4 @@
-# vue-pwa
+# soft4cuba.com
 
 ## Project setup
 ```
