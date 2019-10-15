@@ -16,8 +16,8 @@ Vue.use(NowUiKit);
 new Vue({
   created() {
     AOS.init({
-      offset: 100,
-      duration: 600,
+      offset: 50,
+      duration: 300,
       easing: 'ease-in-sine',
       delay: 300,
       once: true,
