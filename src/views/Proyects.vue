@@ -4,7 +4,7 @@
     style="background-image: url('img/bg11.jpg'); background-size: cover; background-position: top center; min-height: 700px;"
   >
     <div class="container">
-      <card class="mt-5">
+      <card class="mt-5" data-aos="zoom-in">
         <div class="row">
           <div class="col-lg-6 col-md-12">
             <img v-lazy="'img/page.png'" alt="Raised Image" class="rounded img-raised" />
