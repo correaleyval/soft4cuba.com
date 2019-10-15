@@ -10,7 +10,8 @@
             <img v-lazy="'img/page.png'" alt="Raised Image" class="rounded img-raised" />
           </div>
           <div class="col-lg-6 col-md-12">
-            <h2 class="title">Soft4Cuba.com</h2>
+            <br />
+            <h2 class="h2-seo">Soft4Cuba.com</h2>
             <h5>Web principal de nuestra comunidad</h5>
             <!-- <div class="nucleo-container">
                     <img v-lazy="'assetsimg/nucleo.svg'" alt="">
