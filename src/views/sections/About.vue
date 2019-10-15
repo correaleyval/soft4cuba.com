@@ -51,6 +51,8 @@
               class="image-container image-right hidden-xs"
               style="background-image: url('img/1.jpg')"
             ></div>
+            <br />
+            <br />
             <p data-aos="fade-up">
               Soft4Cuba sienta las bases en la igualdad de oportunidad para presentar opiniones,
               ideas y proyectos con el objetivo de lograr el acceso de toda la sociedad al uso de
@@ -74,13 +76,6 @@
               </router-link>
             </p>
           </div>
-        </div>
-      </div>
-      <div class="row text-center" data-aos="slide-up">
-        <div class="col-md-8 ml-auto mr-auto text-center">
-          <a href="#home" class="btn btn-primary btn-icon btn-round">
-            <i class="fa fa-arrow-up"></i>
-          </a>
         </div>
       </div>
     </div>
