@@ -1,7 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
 import Index from './views/Index.vue'
+import Proyects from './views/Proyects.vue'
+
 import MainNavbar from './layout/MainNavbar.vue';
+import ProyectNavbar from './layout/ProyectNavbar'
+
 import MainFooter from './layout/MainFooter.vue';
 
 Vue.use(Router)
@@ -20,6 +25,14 @@ export default new Router({
         footer: { backgroundColor: 'black' }
       },
       alias: '/'
+    },
+    {
+      path: '/proyects',
+      name: 'proyects',
+      components: { default: Proyects, header: ProyectNavbar, footer: MainFooter },
+      props: {
+        footer: { backgroundColor: 'black' }
+      },
     },
   ],
   scrollBehavior: to => {
