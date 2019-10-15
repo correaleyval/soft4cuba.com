@@ -15,7 +15,11 @@
       <div class="section-story-overview">
         <div class="row">
           <div class="col-md-6">
-            <div data-aos="fade-right" class="image-container image-left" style="background-image: url('img/2.jpg')">
+            <div
+              data-aos="fade-right"
+              class="image-container image-left"
+              style="background-image: url('img/2.jpg')"
+            >
               <!-- First image on the left side -->
               <p class="blockquote blockquote-primary" data-aos="flip-left">
                 ¿Tienes una idea o un gran proyecto en mente? Hable con nosotros. Juntos podemos crear grandes cosas.
@@ -42,7 +46,11 @@
           </div>
           <div class="col-md-5">
             <!-- First image on the right side, above the article -->
-            <div data-aos="fade-left" class="image-container image-right" style="background-image: url('img/1.jpg')"></div>
+            <div
+              data-aos="fade-left"
+              class="image-container image-right hidden-xs"
+              style="background-image: url('img/1.jpg')"
+            ></div>
             <p data-aos="fade-up">
               Soft4Cuba sienta las bases en la igualdad de oportunidad para presentar opiniones,
               ideas y proyectos con el objetivo de lograr el acceso de toda la sociedad al uso de
@@ -54,8 +62,25 @@
               atención por todos, que han de contribuir con su divulgación a fin de que sean
               puestos a disposición de las entidades o personas que puedan reconocer su utilidad y
               hacer uso de sus resultados.
+
+              <br />
+              <br />
+
+              <router-link
+                to="proyects"
+                class="btn btn-primary btn-round"
+              >
+                <i class="now-ui-icons design_app"></i> Proyectos
+              </router-link>
             </p>
           </div>
+        </div>
+      </div>
+      <div class="row text-center" data-aos="slide-up">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <a href="#home" class="btn btn-primary btn-icon btn-round">
+            <i class="fa fa-arrow-up"></i>
+          </a>
         </div>
       </div>
     </div>
