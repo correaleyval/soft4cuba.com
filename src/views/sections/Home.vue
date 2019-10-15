@@ -4,10 +4,10 @@
     <div class="container">
       <div class="content-center brand">
         <img class="logo hidden-xs" src="@/assets/logo.png" data-aos="fade-up" />
-        <h1
-          class="h1-seo"
+        <h2
+          class="h2-seo"
           data-aos="zoom-in-down"
-        >Soluciones creativas para convertir tu idea en una realidad</h1>
+        >Soluciones creativas para convertir tu idea en una realidad</h2>
         <div class="text-center">
           <div class="row"></div>
           <a
