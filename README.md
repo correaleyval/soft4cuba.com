@@ -25,5 +25,5 @@ yarn run test
 yarn run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Soft4Cuba
+[https://www.soft4cuba.com/](https://www.soft4cuba.com/).
