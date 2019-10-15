@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-8 ml-auto mr-auto text-center">
           <h2 class="title" data-aos="fade-up">Quiénes somos</h2>
-          <h5 class="description" data-aos="zoom-in-down">
+          <h5 data-aos="zoom-in-down">
             Soft4Cuba es una comunidad abierta para desarrolladores, diseñadores e innovadores
             cubanos. En Soft4Cuba se reúnen programadores, diseñadores e innovadores cubanos con
             el objetivo de expresar sus ideas y formar grupos de desarrollo para materializarlas.
