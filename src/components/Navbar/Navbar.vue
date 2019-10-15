@@ -20,6 +20,9 @@
         v-if="$slots['navbar-menu'] || $scopedSlots['navbar-menu']"
         data-color="orange"
         id="navigation"
+        @click="close"
+        @drag="close"
+        @dragover="close"
       >
         <slot name="before-menu"></slot>
         <ul class="navbar-nav" :class="menuClasses">
