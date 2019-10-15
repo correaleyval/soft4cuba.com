@@ -3,7 +3,7 @@
     <parallax class="page-header-image" style="background-image:url('images/hero-bg.jpg')"></parallax>
     <div class="container">
       <div class="content-center brand">
-        <img class="logo" src="@/assets/logo.png" data-aos="fade-up" />
+        <img class="logo hidden-xs" src="@/assets/logo.png" data-aos="fade-up" />
         <h1
           class="h1-seo"
           data-aos="zoom-in-down"
