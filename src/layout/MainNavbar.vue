@@ -25,6 +25,12 @@
           <p>Acerca de</p>
         </a>
       </li>
+      <li class="nav-item" @click="navlinkClick">
+        <router-link class="nav-link" to="/proyects">
+          <i class="now-ui-icons design_app"></i>
+          <p>Proyectos</p>
+        </router-link>
+      </li>
     </template>
   </navbar>
 </template>
@@ -43,7 +49,7 @@ export default {
     colorOnScroll: Number
   },
   components: {
-    Navbar,    
+    Navbar,
     [Popover.name]: Popover
   },
   methods: {
