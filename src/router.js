@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const Index = () => import('./views/Index.vue')
-const Proyects = () => import('./views/Proyects.vue')
+import Index from './views/Index.vue'
+import Proyects from './views/Proyects.vue'
 
-const MainNavbar = () => import('./layout/MainNavbar.vue')
-const ProyectNavbar = () => import('./layout/ProyectNavbar')
+import MainNavbar from './layout/MainNavbar.vue'
+import ProyectNavbar from './layout/ProyectNavbar'
 
-const MainFooter = () => import('./layout/MainFooter.vue')
+import MainFooter from './layout/MainFooter.vue'
 
 Vue.use(Router)
 

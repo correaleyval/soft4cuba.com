@@ -11,8 +11,8 @@
 </template>
 
 <script>
-const Soft4Cuba = () => import('./proyects/soft4cuba')
-const PDI = () => import('./proyects/pdipython')
+import Soft4Cuba from './proyects/soft4cuba'
+import PDI from './proyects/pdipython'
 
 export default {
   components: {

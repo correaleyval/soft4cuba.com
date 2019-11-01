@@ -5,8 +5,8 @@
   </div>
 </template>
 <script>
-const HomeSection = () => import('./sections/Home')
-const AboutSection = () => import('./sections/About')
+import HomeSection from './sections/Home'
+import AboutSection from './sections/About'
 
 export default {
   name: 'index',
