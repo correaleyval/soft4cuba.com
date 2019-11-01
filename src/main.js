@@ -7,7 +7,7 @@ import './registerServiceWorker'
 import NowUiKit from './plugins/now-ui-kit'
 
 import AOS from 'aos'
-import('aos/dist/aos.css')
+import 'aos/dist/aos.css'
 
 Vue.config.productionTip = false
 
