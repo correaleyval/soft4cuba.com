@@ -1,13 +1,13 @@
 import Vue from 'vue'
-import App from './App.vue'
+const App = () => import('./App.vue')
 import router from './router'
 import store from './store'
 import './registerServiceWorker'
 
-import NowUiKit from './plugins/now-ui-kit';
+import NowUiKit from './plugins/now-ui-kit'
 
 import AOS from 'aos'
-import 'aos/dist/aos.css'
+import('aos/dist/aos.css')
 
 Vue.config.productionTip = false
 
