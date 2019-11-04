@@ -9,6 +9,9 @@ import NowUiKit from './plugins/now-ui-kit'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
+// JQuery for Preloader
+window.$ = window.jQuery = require('jquery')
+
 Vue.config.productionTip = false
 
 Vue.use(NowUiKit);
