@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const Index = ()=> import('./views/Index.vue')
-const Proyects = ()=> import('./views/Proyects.vue')
+import Index from './views/Index.vue'
+import Proyects from './views/Proyects.vue'
 
 import MainNavbar from './layout/MainNavbar.vue'
 import ProyectNavbar from './layout/ProyectNavbar'
