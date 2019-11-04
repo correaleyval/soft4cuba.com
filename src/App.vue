@@ -5,26 +5,15 @@
       <router-view />
     </div>
     <router-view name="footer" />
-    <loader v-if="loading" />
   </div>
 </template>
 <script>
-import Loader from './Loader'
+// import Loader from './Loader'
 
 export default {
-  data: () => ({
-    loading: true 
-  }),
-
   mounted() {
-    setTimeout(() => {
-      this.loading = false
-    }, 3000)
+    
   },
-
-  components: {
-    Loader
-  }
 };
 </script>
 

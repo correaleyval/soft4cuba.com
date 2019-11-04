@@ -1,58 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.png">
-    <title>Soft4Cuba</title>
 
-    <!--- basic head
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.png">
+  <title>Soft4Cuba</title>
+
+  <!--- basic head
     ================================================== -->
-    <meta name="description" content="Soluciones creativas para convertir tu idea en una realidad">
-    <meta name="author" content="Soft4Cuba">
+  <meta name="description" content="Soluciones creativas para convertir tu idea en una realidad">
+  <meta name="author" content="Soft4Cuba">
 
-    <!--- SEO meta tags
+  <!--- SEO meta tags
     =================================================== -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Soft4Cuba">
-    <meta name="twitter:description" 
-    content="Soluciones creativas para convertir tu idea en una realidad">
-    <meta name="twitter:image" content="https://soft4cuba.com/img/page.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Soft4Cuba">
+  <meta name="twitter:description" content="Soluciones creativas para convertir tu idea en una realidad">
+  <meta name="twitter:image" content="https://soft4cuba.com/img/page.png">
 
-    <link rel="image_src" href="https://soft4cuba.com/img/page.png" />
+  <link rel="image_src" href="https://soft4cuba.com/img/page.png" />
 
 
-    <meta property="og:title" content="Soft4Cuba" />
-    <meta property="og:site_name" content="Soft4Cuba"/>
-    <meta property="og:description" content="Soluciones creativas para convertir tu idea en una realidad" />
-    <meta property="og:image" content="https://soft4cuba.com/img/page.png" />
+  <meta property="og:title" content="Soft4Cuba" />
+  <meta property="og:site_name" content="Soft4Cuba" />
+  <meta property="og:description" content="Soluciones creativas para convertir tu idea en una realidad" />
+  <meta property="og:image" content="https://soft4cuba.com/img/page.png" />
 
-    <!-- PWA Meta tags
+  <!-- PWA Meta tags
     ================================================== -->
-    <meta name="theme-color" content="#0e0e0e">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <meta name="theme-color" content="#0e0e0e">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
 
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <link rel="apple-touch-icon" href="favicon.png">
-    <link rel="apple-touch-startup-image" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="apple-touch-startup-image" href="favicon.png">
 
-    <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="manifest.json">
 
-    <!-- Font Awesome
+  <!-- Font Awesome
     ================================================== -->
-    <link href="./font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
+  <link href="./font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
 
-  </head>
-  <body class="sidebar-collapse">
-    <noscript>
-      <strong>We're sorry but Sot4Cuba doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+  <style>
+    #loading-wrapper {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    #loading-text {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: white;
+      width: 100px;
+      height: 30px;
+      margin: -7px 0 0 -45px;
+      text-align: center;
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 20px;
+    }
+
+    #loading-content {
+      display: block;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      width: 170px;
+      height: 170px;
+      margin: -85px 0 0 -85px;
+      border: 3px solid #F00;
+    }
+
+    #loading-content {
+      border: 3px solid transparent;
+      border-top-color: #f96332;
+      border-bottom-color: #f96332;
+      border-radius: 50%;
+      -webkit-animation: loader 2s linear infinite;
+      -moz-animation: loader 2s linear infinite;
+      -o-animation: loader 2s linear infinite;
+      animation: loader 2s linear infinite;
+    }
+
+    @keyframes loader {
+      0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+</head>
+
+<body class="sidebar-collapse">
+  <noscript>
+    <strong>We're sorry but Sot4Cuba doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app"></div>
+
+  <!-- Preloader -->
+  <div id="preloader" style="position:absolute; width: 100%; height:100%; top:0; left:0; z-index:10000; background-color:#0e0e0e">
+    <div id="loading-wrapper">
+      <div id="loading-text">
+        Soft4Cuba
+      </div>
+      <div id="loading-content"></div>
+    </div>
+  </div>
+  <!-- Preloader -->
+
+
+  <!-- built files will be auto injected -->
+</body>
+
 </html>
