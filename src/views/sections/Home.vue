@@ -26,13 +26,14 @@
           >
             <i class="fab fa-telegram"></i>
           </a>
-          <router-link
+          <a
             data-aos="zoom-in"
-            to="/proyects"
+            href="https://twitter.com/Soft4Cuba"
             class="btn btn-primary btn-icon btn-round btn-lg"
+            target="_blank"
           >
-            <i class="now-ui-icons design_app"></i>
-          </router-link>
+            <i class="fab fa-twitter"></i>
+          </a>
         </div>
       </div>
     </div>
