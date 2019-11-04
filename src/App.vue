@@ -12,6 +12,8 @@
 
 export default {
   mounted() {
+
+    // Ocultar preloader
     window.$('#preloader').fadeOut('1000', function () {
         window.$(this).remove();
     });
