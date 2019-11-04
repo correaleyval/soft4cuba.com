@@ -12,7 +12,9 @@
 
 export default {
   mounted() {
-    
+    window.$('#preloader').fadeOut('1000', function () {
+        window.$(this).remove();
+    });
   },
 };
 </script>
