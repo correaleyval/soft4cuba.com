@@ -6,6 +6,7 @@
     <div class="container">
       <Soft4Cuba />
       <PDI />
+      <ML />
     </div>
   </div>
 </template>
@@ -13,11 +14,13 @@
 <script>
 import Soft4Cuba from './proyects/soft4cuba'
 import PDI from './proyects/pdipython'
+import ML from './proyects/mlnotebooks'
 
 export default {
   components: {
     Soft4Cuba,
-    PDI
+    PDI,
+    ML
   }
 };
 </script>
