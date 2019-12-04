@@ -2,11 +2,13 @@
   <div>
     <HomeSection />
     <AboutSection />
+    <OpenSource />
   </div>
 </template>
 <script>
 import HomeSection from './sections/Home'
 import AboutSection from './sections/About'
+import OpenSource from './sections/OpenSource'
 
 export default {
   name: 'index',
@@ -14,6 +16,7 @@ export default {
   components: {
     HomeSection,
     AboutSection,
+    OpenSource
   }
 };
 </script>

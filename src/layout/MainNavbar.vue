@@ -20,6 +20,12 @@
         </a>
       </li>
       <li class="nav-item" @click="navlinkClick">
+        <a target="_blank" href="https://blog.soft4cuba.com" class="nav-link" to="/proyects">
+          <i class="fab fa-blogger"></i>
+          <p>Blog</p>
+        </a>
+      </li>
+      <li class="nav-item" @click="navlinkClick">
         <a class="nav-link" href="#about">
           <i class="now-ui-icons design_bullet-list-67"></i>
           <p>Acerca de</p>

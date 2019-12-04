@@ -37,6 +37,12 @@
         </ul>
       </nav>
       <div class="copyright text-primary">
+        <img
+            src="@/assets/images/os.png"
+            class="img img-fluid mx-auto"
+            alt="OpenSource"
+            width="50"
+          />
         &copy; {{ year }}, Soft<strong>4</strong>Cuba
       </div>
     </div>
