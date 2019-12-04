@@ -12,7 +12,7 @@
         <div class="col-lg-6">
           <h2 class="o_default_snippet_text">Open Source Community</h2>
           <p class="o_default_snippet_text">
-            <bold>Soft4Cuba</bold> es una comunidad Open Source
+            Soft4Cuba es una comunidad Open Source
             <br />
             Comprendemos el valor de producir o participar en la producción de 
             software de código abierto a través de una comunidad que contribuye
@@ -22,7 +22,9 @@
             class="o_default_snippet_text"
           >Intercooperando! No nos preocupa el código, nos interesan los proyectos</p>
           <div class="s_btn text-left">
-            <a href="#" class="btn btn-primary btn-round">Descubra más</a>
+            <a target="_blank" 
+            href="https://blog.soft4cuba.com/comunidad/2019/12/04/somos-opensource.html" 
+            class="btn btn-primary btn-round">Descubra más</a>
           </div>
         </div>
       </div>
