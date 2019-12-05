@@ -65,7 +65,7 @@ export default {
   },
 
   mounted() {
-    let api = "http://soft4cuba.herokuapp.com/visits/getlen/www.soft4cuba.com"
+    let api = "https://soft4cuba.herokuapp.com/visits/getlen/www.soft4cuba.com"
     this.axios.get(api).then((response) => {
       this.views = response.data.data
     })
