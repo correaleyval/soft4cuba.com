@@ -9,6 +9,12 @@ import NowUiKit from './plugins/now-ui-kit'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
+// Axios
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+Vue.use(VueAxios, axios)
+
 // JQuery for Preloader
 window.$ = window.jQuery = require('jquery')
 
