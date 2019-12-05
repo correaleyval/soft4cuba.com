@@ -25,7 +25,7 @@
               <i class="fab fa-telegram"></i>
             </a>
           </li>
-          <li>
+          <li class="mr-3">
             <a
               href="https://twitter.com/Soft4Cuba"
               class="btn btn-primary btn-icon btn-round"
@@ -43,7 +43,9 @@
             alt="OpenSource"
             width="50"
           />
-        &copy; {{ year }}, Soft<strong>4</strong>Cuba
+        <i class="fa fa-bullseye"></i> Soft<strong>4</strong>Cuba &copy; {{ year }} 
+        <i class="fa fa-eye"></i> {{views}}
+        
       </div>
     </div>
   </footer>
@@ -57,8 +59,16 @@ export default {
   },
   data() {
     return {
-      year: new Date().getFullYear()
+      year: new Date().getFullYear(),
+      views: ''
     };
+  },
+
+  mounted() {
+    let api = "http://soft4cuba.herokuapp.com/visits/getlen/www.soft4cuba.com"
+    this.axios.get(api).then((response) => {
+      this.views = response.data.data
+    })
   }
 };
 </script>
