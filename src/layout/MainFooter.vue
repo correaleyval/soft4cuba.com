@@ -36,14 +36,14 @@
           </li>
         </ul>
       </nav>
-      <div class="copyright text-primary">
+      <div class="copyright text-blue">
         <img
             src="@/assets/images/os.png"
             class="img img-fluid mx-auto"
             alt="OpenSource"
             width="50"
           />
-        <i class="fa fa-bullseye"></i> Soft<strong>4</strong>Cuba &copy; {{ year }} 
+        Soft<strong>4</strong>Cuba &copy; {{ year }} 
         <i class="fa fa-eye"></i> {{views}}
         
       </div>

@@ -26,14 +26,6 @@
           >
             <i class="fab fa-telegram"></i>
           </a>
-          <a
-            data-aos="zoom-in"
-            href="https://twitter.com/Soft4Cuba"
-            class="btn btn-primary btn-icon btn-round btn-lg"
-            target="_blank"
-          >
-            <i class="fab fa-twitter"></i>
-          </a>
         </div>
       </div>
     </div>

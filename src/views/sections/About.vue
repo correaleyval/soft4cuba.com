@@ -27,24 +27,17 @@
                 <br />
                 <a
                   href="https://www.facebook.com/groups/495795397671271/"
-                  class="btn btn-primary btn-icon btn-round mr-2"
+                  class="btn btn-primary btn-icon btn-round mr-3"
                   target="_blank"
                 >
                   <i class="fab fa-facebook-square"></i>
                 </a>
                 <a
                   href="https://t.me/soft4cuba"
-                  class="btn btn-primary btn-icon btn-round mr-2"
+                  class="btn btn-primary btn-icon btn-round ml-4"
                   target="_blank"
                 >
                   <i class="fab fa-telegram"></i>
-                </a>
-                <a
-                  href="https://twitter.com/Soft4Cuba"
-                  class="btn btn-primary btn-icon btn-round"
-                  target="_blank"
-                >
-                  <i class="fab fa-twitter"></i>
                 </a>
               </p>
             </div>

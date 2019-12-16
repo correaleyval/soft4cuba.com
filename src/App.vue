@@ -47,4 +47,17 @@ export default {
   }
 }
 
+.btn-primary {
+  background-color: #32a9ed !important;
+}
+
+.blockquote.blockquote-primary {
+  border-color: #32a9ed !important;
+  color:  #32a9ed !important;
+}
+
+.text-blue {
+  color: #32a9ed !important;
+}
+
 </style>
