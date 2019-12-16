@@ -1,6 +1,6 @@
 <template>
   <div id="home" class="page-header clear-filter">
-    <parallax class="page-header-image" style="background-image:url('images/hero-bg.jpg')"></parallax>
+    <parallax class="page-header-image" style="background-image:url('images/wall.jpg')"></parallax>
     <div class="container">
       <div class="content-center brand">
         <img class="logo hidden-xs" src="@/assets/logo.png" data-aos="fade-up" />

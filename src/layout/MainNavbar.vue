@@ -69,7 +69,7 @@ export default {
 <style lang="scss" scoped>
 .navbar-brand {
   img {
-    height: 32px;
+    height: 46px;
   }
 }
 </style>
